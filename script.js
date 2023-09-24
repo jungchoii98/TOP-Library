@@ -95,6 +95,9 @@ function displayBooks() {
     let readBtn = document.createElement('button');
     readBtn.innerHTML = library.getBookAt(i).getReadString();
     readBtn.addEventListener("click", toggleRead);
+    if (library.getBookAt(i).read) {
+      readBtn.classList.add('read-btn');
+    }
     let removeBtn = document.createElement('button');
     removeBtn.innerHTML = 'Remove';
     removeBtn.addEventListener("click", removeBook);

@@ -1,4 +1,5 @@
 @import url(node_modules/normalize.css/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Skranji:wght@400;700&display=swap');
 
 *::before,
 *::after,
@@ -6,22 +7,35 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  font-family: "Skranji", sans-serif;
+  text-shadow: 0px 0px 8px lightgray;
+}
+
+p {
+  margin: 0px;
+}
+
+button {
+  box-shadow: 2px 2px 8px lightgray;
+  cursor: pointer;
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+  background-color: #e0e2d0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background-color: white;
+  background-color: #eeefe7fe;
+  box-shadow: 4px 4px 4px lightgray;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
+  font-weight: 700;
 }
 
 main {
@@ -29,9 +43,68 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 400;
+}
+
+main > button {
+  padding: 16px;
+  border: none;
+  border-radius: 25px;
+  font-size: 25px;
+  background-color: #eeefe7fe;
+}
+
+#show-dialog {
+  margin: 25px 0px;
+}
+
+article {
+  width: 80%;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 50px;
+}
+
+article div {
+  width: 100%;
+  padding: 25px 0px;
+  background-color: #eeefe7fe;
+  border-radius: 25px;
+  box-shadow: 2px 2px 8px lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+article div * {
+  width: 80%;
+  text-align: center;
+}
+
+article div button {
+  border: none;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+article div button:first-of-type {
+  background-color: #eeefe7fe;
+}
+
+article div button.read-btn {
+  background-color: #e0e2d0;
+}
+
+article div button:last-of-type {
+  background-color: #D5C7BC;
 }
 
 footer {
   display: flex;
   justify-content: center;
+  font-weight: 400;
+  padding-bottom: 16px;
 }
