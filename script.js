@@ -91,7 +91,7 @@ function displayBooks() {
     let authorElement = document.createElement('p');
     authorElement.innerHTML = library.getBookAt(i).author;
     let pagesElement = document.createElement('p');
-    pagesElement.innerHTML = library.getBookAt(i).pages;
+    pagesElement.innerHTML = library.getBookAt(i).pages + 'pages';
     let readBtn = document.createElement('button');
     readBtn.innerHTML = library.getBookAt(i).getReadString();
     readBtn.addEventListener("click", toggleRead);

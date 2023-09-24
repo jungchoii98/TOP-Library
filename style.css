@@ -102,6 +102,43 @@ article div button:last-of-type {
   background-color: #D5C7BC;
 }
 
+dialog {
+  border: none;
+  border-radius: 25px;
+  background-color: #f7f8f1fe;
+}
+
+form ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0px;
+}
+
+form ul li {
+  display: flex;
+  gap: 8px;
+}
+
+form ul li input[type] {
+  border: none;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+form ul li button {
+  border: none;
+  border-radius: 16px;
+  padding: 16px;
+  width: 100px;
+}
+
+h2 {
+  margin: 0px;
+}
+
 footer {
   display: flex;
   justify-content: center;
