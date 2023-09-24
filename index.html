@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+    <span>Log In</span>
+  </header>
+  <main>
+    <button id="show-dialog">Add a book</button>
+    <article>
+    </article>
+  </main>
+  <dialog>
+    <form>
+      <ul>
+        <li>
+          <h2>Add a book</h2>
+        </li>
+        <li>
+          <label for="title-input">Title</label>
+          <input type="text" name="title-input" id="title-input">
+        </li>
+        <li>
+          <label for="author-input">Author</label>
+          <input type="text" name="author-input" id="author-input">
+        </li>
+        <li>
+          <label for="page-input"># of Pages</label>
+          <input type="number" name="page-input" id="page-input">
+        </li>
+        <li>
+          <label for="read-input">Have you read this book?</label>
+          <input type="checkbox" name="read-input" id="read-input">
+        </li>
+        <li>
+          <button id="cancel-button">Cancel</button>
+          <button id="add-button">Add</button>
+        </li>
+      </ul>
+    </form>
+  </dialog>
+  <footer>
+    Copyright © 2023 jungchoii98
+  </footer>
+</body>
+</html>
