@@ -67,7 +67,7 @@ addButtonElement.addEventListener("click", (event) => {
   let title = titleInputElement.value;
   let author = authorInputElement.value;
   let pages = parseInt(pageInputElement.value);
-  let read = readInputElement.value === "on" ? true : false;
+  let read = readInputElement.checked ? true : false;
   library.addBook(title, author, pages, read);
   displayBooks();
   dialogElement.close();
@@ -77,7 +77,7 @@ function refreshModalInputs() {
   titleInputElement.value = '';
   authorInputElement.value = '';
   pageInputElement.value = '';
-  readInputElement.value = '';
+  readInputElement.checked = false;
 }
 
 function displayBooks() {
@@ -91,7 +91,7 @@ function displayBooks() {
     let authorElement = document.createElement('p');
     authorElement.innerHTML = library.getBookAt(i).author;
     let pagesElement = document.createElement('p');
-    pagesElement.innerHTML = library.getBookAt(i).pages + 'pages';
+    pagesElement.innerHTML = library.getBookAt(i).pages + ' pages';
     let readBtn = document.createElement('button');
     readBtn.innerHTML = library.getBookAt(i).getReadString();
     readBtn.addEventListener("click", toggleRead);
