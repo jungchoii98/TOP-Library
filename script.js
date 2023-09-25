@@ -125,9 +125,3 @@ function removeBook(event) {
   library.removeBook(index);
   displayBooks();
 }
-
-library.addBook("The Count of Monte Cristo", "Alexandre Dumas", 1024, false);
-
-library.addBook("A Short History of Nearly Everything", "Bill Bryson", 324, false);
-
-displayBooks();
